@@ -26,14 +26,23 @@ const makeTitle = title
 
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
-    <SEO
+	 <!-- Google tag (gtag.js) -->
+		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-YEGCZXFQRP"></script>
+		<script type="text/partytown">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-YEGCZXFQRP');
+</script>
+  <SEO
       title={makeTitle}
       description="✈️ Turn Visitors Into Bookings With an AI Travel Assistant"
       canonical={canonicalURL}
