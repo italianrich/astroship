@@ -4,51 +4,50 @@ import { Icon } from "astro-icon/components";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Instant Trip Recommendations",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Your AI assistant can instantly answer questions about destinations, prices, or packages — even outside office hours.",
+    icon: "bx:bxs-plane-alt",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Convert More Visitors",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Turn website visitors into real leads. The chatbot guides them from curiosity to booking without needing to call or wait.",
+    icon: "bx:bxs-conversation",
   },
   {
-    title: "On-Demand Components",
+    title: "Always Available 24/7",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Let clients chat anytime — your AI assistant never sleeps. Perfect for answering questions while you focus on sales.",
+    icon: "bx:bxs-time-five",
   },
   {
-    title: "Broad Integration",
+    title: "Easy Integration",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+      "Add the chat widget to your existing website in minutes. Works with any site or CMS — no coding required.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "SEO Enabled",
+    title: "Multilingual Support",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Serve customers in English, French, Italian, or any language you choose. Great for agencies with international clients.",
+    icon: "bx:bxs-flag-alt",
   },
   {
-    title: "Community",
+    title: "Performance Reports",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Track client interactions and see how many conversations turn into leads — clear proof your AI assistant delivers results.",
+    icon: "bx:bxs-bar-chart-alt-2",
   },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+    Your AI Assistant for Travel Agencies
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    Engage visitors, answer questions, and sell more trips automatically — all with your custom AI travel agent assistant.
   </p>
 </div>
 
@@ -56,11 +55,11 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-lg">{item.title}</h3>
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
